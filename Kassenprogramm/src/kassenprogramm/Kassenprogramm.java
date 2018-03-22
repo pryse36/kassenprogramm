@@ -10,12 +10,24 @@ package kassenprogramm;
  * @author Timo
  */
 public class Kassenprogramm {
-
+String text;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+            
+        Kassenprogramm kasse = new Kassenprogramm();
+        kasse.setText("Hallooo");
+        kasse.showText();
+    }
+    
+    public void setText(String text){
+    this.text = text;
+    }
+    
+    public void showText(){
+        System.out.println(this.text);
+    
     }
     
 }
